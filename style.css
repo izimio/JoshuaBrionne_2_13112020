@@ -1,0 +1,166 @@
+
+/* GLOBAL */
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('font/Raleway-Italic-VariableFont_wght.ttf') format('ttf'),
+    url('font/Raleway-VariableFont_wght.ttf') format('ttf'),
+}
+
+body{
+    font-family: 'raleway', Arial, serif;
+}
+
+#bloc_space{
+    width: 1440px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+    padding: 0px;
+    list-style-position: inside;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.blue{
+    color:  #0065FC;
+}
+
+.grey{
+    color: #F2F2F2;
+}
+
+.lightblue{
+    color: #DEEBFF;
+}
+
+h1{
+    font-size: 1.3em;
+}
+/*++++++++++++++++++++++++++*/
+
+
+/* HEADER */
+
+header p{
+    font-size: 0.98em;
+}
+
+/* NAV*/
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav li:nth-child(1), nav li:nth-child(2)
+{
+    margin-right: 10.2%;
+}
+
+nav a{
+    col
+}
+
+/* FIN NAV */
+/* TXT HEADER */
+
+.txtheader{
+    line-height: 15px;
+    margin-bottom: 25px;
+}
+
+
+/* TABLEAU FORMULAIRE */
+table{
+    border-collapse: collapse;
+}
+
+table td:nth-child(1){
+    padding: 12px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; 
+    background-color: #F2F2F2;
+}
+
+table td:nth-child(2){
+    padding: 12px;
+    border: 2px solid #F2F2F2;
+}
+
+table td:nth-child(3){
+    padding: 12px;
+    border-top-right-radius: 15px;
+    background-color: #0065FC;
+    border-bottom-right-radius: 15px;
+}
+
+input[type=text] {
+    font-weight: bold;
+}
+
+input[type=submit] {
+    background-color: #0065FC;
+    color: white;
+    font-weight: bold;
+}
+
+/* FIN TABLEAU FORMULAIRE */
+
+.res span{
+    color:  #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+}
+
+.res{
+    display: flex;
+}
+
+input {
+    border: none;
+}
+
+/*++++++++++++++++++++++++++*/
+
+
+
+/* HEBERGEMENT */
+
+.hebergement img{
+    width: 300px;
+    height: 200px;
+}
+
+.star-full{
+    color:#0065FC;
+}
+
+.star-empty{
+    color: #F2F2F2;
+}
+
+/*++++++++++++++++++++++++++*/
+
+/* ASIDE */
+
+/*++++++++++++++++++++++++++*/
+
+/* ACTIVITES */
+
+/*++++++++++++++++++++++++++*/
+
+/* FOOTER */
+
+
+
+/*++++++++++++++++++++++++++*/
