@@ -332,10 +332,6 @@ aside {
     margin-right: 5%;
 }
 
-.star2:nth-child(1) {
-    font-size: 0.9em;
-    line-height: 4px;
-}
 /* ASIDE */
 /* FIN SECT */
 /*++++++++++++++++++++++++++*/
@@ -343,24 +339,77 @@ aside {
 
 /* ACTIVITES */
 
-article img {
-    position: absolute;
-        clip:rect(10px,190px,190px,10px);
-        display: none;
- }
+.capt{
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    box-shadow: 1px 3px 3px rgba(91, 91, 91, 0.2);
+}
 
+.capt p{
+    font-weight: bold;
+    margin-left: 8%;
+    padding-bottom: 2%;
+}
+
+.car3 img{
+    border-top-right-radius:25px ;
+    border-top-left-radius:25px ;
+}
 
 .car3{
     display: flex;
     justify-content: space-between;
 }
 
-.carte_car3_1, .carte_car3_2, .carte_car3_3, .carte_car3_4{
-    border: 1px solid red;
-    border-radius: 25px;
-    padding: 0.3em;
-    box-shadow: 3px 3px 3px rgba(91, 91, 91, 2);
 
+.carte_car3_1, .carte_car3_2, .carte_car3_3, .carte_car3_4{
+    width: 23%;
+    height: 450px;
+    overflow: hidden;
+    border-top-right-radius:25px ;
+    border-top-left-radius:25px ;
+}
+
+.vp_img{
+    height: 91%;
+    overflow: hidden;
+}
+
+.pomegues{
+    height: 60%;
+}
+
+.frioul{
+    margin-top: 10%;
+    height: 30%;
+}
+
+.frioul_img, .pomegues_img{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.calanque_img{
+    height: 89%;
+    overflow: hidden;
+}
+
+.notredamedlg{
+    height: 50%;
+}
+
+.notredamedlg_img, .parc_img{
+    height: 80%;
+    overflow: hidden;
+}
+
+.parc{
+    margin-top: 10%;
+    border-top-right-radius:25px ;
+    border-top-left-radius:25px ;
+    height: 40%;
 }
 /*++++++++++++++++++++++++++*/
 
@@ -370,6 +419,7 @@ footer{
     display: flex;
     background-color: #F2F2F2;
     border: 2px solid red;
+    margin-top: 2%;
 }
 
 .ftliste{
