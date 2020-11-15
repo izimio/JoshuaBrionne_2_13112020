@@ -48,6 +48,10 @@ h1 {
 
 /* HEADER */
 
+.minw{
+    display: none;
+}
+
 header p {
     font-size: 0.98em;
 }
@@ -492,14 +496,7 @@ footer li{
         margin: auto;
     }
 
-    .txtheader{
-        line-height: 20px;
-    }
-
-    .hebergement{
-        flex-direction: column-reverse;
-    }
-
+/* HEADER */
     .top{
         display: flex;
         justify-content: space-between;
@@ -507,36 +504,37 @@ footer li{
         margin-left: 2%;
     }
 
+    .txtheader{
+        line-height: 20px;
+    }
+
     .minnav{
-        width: 100%;
-        margin-right: 0%;
+        display: none;
     }
 
-    .minw li{
-        width: 100%;
+    .minw {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .minw p{
         text-align: center;
-        padding-bottom: 6%;
     }
 
-    .minw:nth-child(1){
-        width: 100%;
+    .mind, .mind2{
+        width: 50%;
+    }
+
+    .mind{
         border-bottom: 3px solid #0065FC;
     }
 
-    .minw:nth-child(2){
-        width: 100%;
+    .mind2{
         border-bottom: 3px solid #F2F2F2;
-        margin-right: -20%;
     }
 
     nav{
         display: block;
-    }
-
-    .sect{
-        width: 100%;
-        margin-bottom: 2%;
-        background-color: white;
     }
 
     .bluett{
@@ -549,18 +547,90 @@ footer li{
     .bluet{
         display: none;
     }
+
+/* FIN HEADER */
+
+
+    .hebergement{
+        flex-direction: column-reverse;
+    }
+
+    .car1{
+        height: auto;
+    }
+
+    .sect{
+        width: 100%;
+        margin-bottom: 2%;
+        background-color: white;
+    }
+
     aside{
         width: 100%;
         margin-bottom: 5%;
         border-radius: 0px;
     }
 
+    /* ACTIVITE */
+
     .carte_car2, .carte_car1{
         margin-bottom: 3%;
     }
 
-    .footer{
-        display: flex;
+    article{
+        margin-bottom: 5%;
+    }
+
+    .car3{
         flex-direction: column;
+    }
+
+    .carte_car3_1, .carte_car3_2, .carte_car3_4{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+
+    .capt{
+        height: 10%;
+    }
+    .vp_img{
+        height: 80%;
+    }
+
+    .calanque_img{
+        height: 80%;
+    }
+
+    .pomegues{
+        height: 40%;
+    }
+
+    .frioul{
+        margin-top: 5%;
+        height: 55%;
+    }
+
+
+    .notredamedlg{
+        height: 40%;
+    }
+
+    .parc{
+        margin-top: 5%;
+        height: 55%;
+    }
+
+    /* FOOTER */
+    footer{
+        display: block;
+    }
+
+    footer li{
+        margin-bottom: 2%;
+    }
+
+    footer ul{
+        margin-bottom: 15%;
     }
 }
