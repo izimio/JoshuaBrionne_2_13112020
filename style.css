@@ -121,6 +121,7 @@ input[type=submit] {
     color: white;
     font-weight: bold;
     border: 2px solid red;
+    display: block;
 }
 
 
@@ -137,11 +138,17 @@ cursor: pointer;
 .filtre ul {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.filtre_wrap{
+    border: 5px solid red;
 }
 
 .filtre li {
     margin-right: 20px;
     padding-right: 13px;
+    margin-bottom: 2%;
 }
 
 .filtre li:nth-child(1) {
@@ -215,7 +222,7 @@ cursor: pointer;
 
 /* CAR1 */
 .car1 {
-    height: 500px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -440,9 +447,41 @@ footer li{
 
 
 /* QUERIES */
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1424px) {
     #bloc_page {
         width: auto;
         margin: auto;
     }
+}
+
+@media all and (max-width: 840px) {
+    #bloc_page {
+        width: auto;
+        margin: auto;
+    }
+
+    .hebergement{
+        flex-direction: column;
+    }
+    .sect{
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    aside{
+        width: 100%;
+    }
+
+    .carte_car2, .carte_car1{
+        margin-bottom: 3%;
+    }
+}
+
+@media all and (max-width: 480px) {
+    #bloc_page {
+        width: auto;
+        margin: auto;
+    }
+
+
 }
