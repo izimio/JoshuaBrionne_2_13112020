@@ -58,9 +58,12 @@ nav {
     justify-content: space-between;
 }
 
+.minnav{
+    display: flex;
+}
+
 nav ul {
     display: flex;
-    border: 2px solid red;
 }
 
 nav li:nth-child(1),
@@ -377,6 +380,8 @@ aside {
     border-top-left-radius:25px ;
 }
 
+article{
+}
 .vp_img{
     height: 91%;
     overflow: hidden;
@@ -443,6 +448,10 @@ footer li{
     color: rgb(60, 60, 60);
 }
 
+.bluett{
+    display: none;
+}
+
 /*++++++++++++++++++++++++++*/
 
 
@@ -477,11 +486,81 @@ footer li{
     }
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 560px) {
     #bloc_page {
         width: auto;
         margin: auto;
     }
 
+    .txtheader{
+        line-height: 20px;
+    }
 
+    .hebergement{
+        flex-direction: column-reverse;
+    }
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 2%;
+        margin-left: 2%;
+    }
+
+    .minnav{
+        width: 100%;
+        margin-right: 0%;
+    }
+
+    .minw li{
+        width: 100%;
+        text-align: center;
+        padding-bottom: 6%;
+    }
+
+    .minw:nth-child(1){
+        width: 100%;
+        border-bottom: 3px solid #0065FC;
+    }
+
+    .minw:nth-child(2){
+        width: 100%;
+        border-bottom: 3px solid #F2F2F2;
+        margin-right: -20%;
+    }
+
+    nav{
+        display: block;
+    }
+
+    .sect{
+        width: 100%;
+        margin-bottom: 2%;
+        background-color: white;
+    }
+
+    .bluett{
+        display: inline;
+        color: #0065FC;
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+
+    .bluet{
+        display: none;
+    }
+    aside{
+        width: 100%;
+        margin-bottom: 5%;
+        border-radius: 0px;
+    }
+
+    .carte_car2, .carte_car1{
+        margin-bottom: 3%;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
+    }
 }
