@@ -152,10 +152,6 @@ cursor: pointer;
     flex-wrap: wrap;
 }
 
-.filtre_wrap{
-    border: 5px solid red;
-}
-
 .filtre li {
     margin-right: 20px;
     padding-right: 13px;
@@ -335,7 +331,6 @@ aside {
     margin-right: 5%;
     margin-left: 5%;
     justify-content: space-around;
-    border: 2px solid red;
 }
 
 .carte_car2 {
@@ -348,10 +343,10 @@ aside {
 }
 
 .car2_img{
-    width: 33%;
+    width: 50%;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
-    border: 2px solid red;
+    height: 180px;
 }
 
 .car2_img img{
