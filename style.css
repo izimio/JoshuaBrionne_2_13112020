@@ -27,7 +27,7 @@ a {
     color: black;
 }
 
-.blue {
+.blue, .bluet {
     color: #0065FC;
 }
 
@@ -251,6 +251,7 @@ cursor: pointer;
     border-radius: 25px;
     padding: 0.3em;
     box-shadow: 3px 3px 3px rgba(91, 91, 91, 0.03);
+    margin-bottom: 8%;
 }
 
 .star h3{
@@ -362,7 +363,6 @@ aside {
 .capt p{
     font-weight: bold;
     margin-left: 8%;
-    padding-bottom: 2%;
 }
 
 .car3 img{
@@ -426,6 +426,10 @@ article{
     border-top-right-radius:25px ;
     border-top-left-radius:25px ;
     height: 40%;
+}
+
+.parc_img{
+    border-top-right-radius: 25px;
 }
 /*++++++++++++++++++++++++++*/
 
