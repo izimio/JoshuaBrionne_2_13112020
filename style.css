@@ -75,6 +75,10 @@ nav li:nth-child(2) {
     margin-right: 70px;
 }
 
+nav li:hover{
+    border-top: 2px solid #0065FC;
+}
+
 /* FIN NAV */
 /* TXT HEADER */
 
@@ -219,13 +223,20 @@ cursor: pointer;
 
 
 .car1 img {
-    width: 250px;
-    height: 100px;
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
 }
 
+
+
 /* SECT */
+
+.sect {
+    width: 66%;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    margin-right: 3%;
+}
 
 /* CAR1 */
 .car1 {
@@ -238,20 +249,33 @@ cursor: pointer;
     margin-bottom: 5%;
 }
 
-.sect {
-    width: 66%;
-    background-color: #F2F2F2;
-    border-radius: 25px;
-    margin-right: 3%;
-}
-
 .carte_car1 {
-    overflow: hidden;
     background-color: white;
     border-radius: 25px;
     padding: 0.3em;
     box-shadow: 3px 3px 3px rgba(91, 91, 91, 0.03);
     margin-bottom: 8%;
+    width: 250px;
+    height: 250px;
+}
+
+.car1_img{
+    height: 60%;
+}
+
+.car1_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.star {
+    margin-left: 6%;
+    height: 40%
+}
+
+.carte_car1:hover, .carte_car2:hover, .carte_car3_1:hover, .carte_car3_2:hover, .carte_car3_3:hover, .carte_car3_4:hover{
+    scale: 105%;
 }
 
 .star h3{
@@ -269,9 +293,7 @@ cursor: pointer;
     margin-bottom: 0%;
     
 }
-.star {
-    margin-left: 6%;
-}
+
 
 .sect h2{
     margin-bottom: 2%;
@@ -283,7 +305,6 @@ cursor: pointer;
     font-weight: bold;
     margin-left: 5%;
     margin-bottom: 5%;
-    margin-top: 5%;
     font-size: 1.3em;
 }
 /* FIN ***************CAR1************** */
@@ -306,6 +327,50 @@ aside {
     padding: 1%;
 }
 
+
+.car2 {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: space-around;
+    border: 2px solid red;
+}
+
+.carte_car2 {
+    background-color: white;
+    display: flex;
+    border-radius: 25px;
+    padding: 0.3em;
+    box-shadow: 3px 3px 3px rgba(91, 91, 91, 0.03);
+    width: 100%;
+}
+
+.car2_img{
+    width: 33%;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border: 2px solid red;
+}
+
+.car2_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.car2 img {
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    margin-right: 6%;
+}
+
+.star2 {
+    margin-left: 5%;
+    width: 67%;
+}
+
 .star2 h3{
     margin-bottom: 0%;
 }
@@ -316,36 +381,6 @@ aside {
     margin-bottom: 20%;
 }
 
-
-.car2 img {
-    width: 38%;
-    height: 150px;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-    margin-right: 6%;
-}
-
-.car2 {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    margin-right: 5%;
-    margin-left: 5%;
-    justify-content: space-around;
-}
-
-
-.carte_car2 {
-    background-color: white;
-    display: flex;
-    border-radius: 25px;
-    padding: 0.3em;
-    box-shadow: 3px 3px 3px rgba(91, 91, 91, 0.03);
-}
-
-.star2 {
-    margin-right: 5%;
-}
 
 /* ASIDE */
 /* FIN SECT */
@@ -358,6 +393,7 @@ aside {
     border-bottom-right-radius: 25px;
     border-bottom-left-radius: 25px;
     box-shadow: 1px 3px 3px rgba(91, 91, 91, 0.2);
+    padding-bottom: 1px;
 }
 
 .capt p{
@@ -378,16 +414,13 @@ aside {
 
 .carte_car3_1, .carte_car3_2, .carte_car3_3, .carte_car3_4{
     width: 23%;
-    height: 450px;
-    overflow: hidden;
     border-top-right-radius:25px ;
     border-top-left-radius:25px ;
+    height: 450px;
 }
 
-article{
-}
 .vp_img{
-    height: 91%;
+    height: 89%;
     overflow: hidden;
 }
 
@@ -396,12 +429,12 @@ article{
 }
 
 .frioul{
-    margin-top: 10%;
-    height: 30%;
+    margin-top: 5%;
+    height: 35%;
 }
 
 .frioul_img, .pomegues_img{
-    height: 80%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -419,6 +452,12 @@ article{
 .notredamedlg_img, .parc_img{
     height: 80%;
     overflow: hidden;
+}
+
+.notredamedlg_img img, .parc_img img, .calanque_img img, .frioul_img img, .pomegues_img img, .vp_img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .parc{
@@ -439,7 +478,7 @@ footer{
     display: flex;
     background-color: #F2F2F2;
     border: 2px solid red;
-    margin-top: 2%;
+    margin-top: 3%;
 }
 
 .ftliste{
@@ -561,8 +600,9 @@ footer li{
 
     .car1{
         height: auto;
+        flex-direction: column;
     }
-
+    
     .sect{
         width: 100%;
         margin-bottom: 2%;
@@ -581,7 +621,7 @@ footer li{
         margin-bottom: 3%;
     }
 
-    article{
+    section{
         margin-bottom: 5%;
     }
 
@@ -600,6 +640,7 @@ footer li{
     }
     .vp_img{
         height: 80%;
+        object-fit: contain;
     }
 
     .calanque_img{
@@ -626,7 +667,9 @@ footer li{
     }
 
     /* FOOTER */
+
     footer{
+        border: 2px solid red;
         display: block;
     }
 
