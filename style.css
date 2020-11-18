@@ -243,6 +243,7 @@ cursor: pointer;
     align-content: space-around;
     margin-top: 2%;
     margin-bottom: 5%;
+    margin-right: 5%;
 }
 
 .carte_car1 {
@@ -250,7 +251,7 @@ cursor: pointer;
     border-radius: 25px;
     padding: 0.3em;
     box-shadow: 3px 3px 3px rgba(91, 91, 91, 0.03);
-    margin-bottom: 8%;
+    margin-bottom: 13%;
     width: 250px;
     height: 250px;
 }
@@ -271,7 +272,7 @@ cursor: pointer;
 }
 
 .carte_car1:hover, .carte_car2:hover, .carte_car3_1:hover, .carte_car3_2:hover, .carte_car3_3:hover, .carte_car3_4:hover{
-    scale: 105%;
+    scale: 102%;
 }
 
 .star h3{
@@ -441,7 +442,7 @@ aside {
 }
 
 .notredamedlg{
-    height: 50%;
+    height: 40%;
 }
 
 .notredamedlg_img, .parc_img{
@@ -456,7 +457,7 @@ aside {
 }
 
 .parc{
-    margin-top: 10%;
+    margin-top: 25%;
     border-top-right-radius:25px ;
     border-top-left-radius:25px ;
     height: 40%;
@@ -596,8 +597,14 @@ footer li{
     .car1{
         height: auto;
         flex-direction: column;
+        margin-left: 0;
     }
     
+    .carte_car1{
+        width: 100%;
+        border: 1px solid red;
+    }
+
     .sect{
         width: 100%;
         margin-bottom: 2%;
@@ -612,9 +619,6 @@ footer li{
 
     /* ACTIVITE */
 
-    .carte_car2, .carte_car1{
-        margin-bottom: 3%;
-    }
 
     section{
         margin-bottom: 5%;
@@ -624,10 +628,12 @@ footer li{
         flex-direction: column;
     }
 
-    .carte_car3_1, .carte_car3_2, .carte_car3_4{
+    .carte_car3_1, .carte_car3_2, .carte_car3_3, .carte_car3_4{
         width: 100%;
-        margin-bottom: 2%;
     }
+
+
+/* ALL IMAGES HEIGHT */
 
 
     .capt{
@@ -635,36 +641,61 @@ footer li{
     }
     .vp_img{
         height: 80%;
-        object-fit: contain;
     }
 
     .calanque_img{
         height: 80%;
     }
 
-    .pomegues{
-        height: 40%;
+    .carte_car3_1{
+        height: 220px;
     }
 
-    .frioul{
-        margin-top: 5%;
-        height: 55%;
+    .carte_car3_3{
+        height: 220px;
     }
-
+/* **** */
 
     .notredamedlg{
-        height: 40%;
+        height: 50%;
     }
 
+    .parc, .frioul, .pomegues{
+        height: 50%;
+    }
+
+
+    section{
+        margin-bottom: 10%;
+    }
+
+    .frioul, .carte_car3_3{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+/* MARGIN ACTIVITE */
+
+
+    .pomegues{
+        margin-top: 5%;
+    }
+
+    .carte_car3_3{
+        margin-top: 5%;
+    }
+
+    .carte_car3_4{
+        margin-top: 5%;
+    }
+    
     .parc{
         margin-top: 5%;
-        height: 55%;
     }
 
     /* FOOTER */
 
     footer{
-        border: 2px solid red;
         display: block;
     }
 
