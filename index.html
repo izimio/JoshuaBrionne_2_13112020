@@ -37,14 +37,28 @@
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
-            <table>
+            <table class="tab1">
                 <tr>
                     <td><span class="fas fa-map-marker-alt"></span></td>
-                    <td>
-                        <form method="POST" action="#.php"></form>
-                        <input type="text" name="recherche" value="Marseille, France" maxlength="40">
+                    <form method="POST" action="bla.php">
+                        <td>
+                            <input type="text" name="recherche" value="Marseille, France" maxlength="40">
+                        </td>
+                            <td class="cursor"> <input type="submit" value="Rechercher"></span></td>
+                    </form>
+                </tr>
+            </table>
+            <table class="tab2">
+                <tr>
+                    <td><span class="fas fa-map-marker-alt"></span></td>
+                    <td class="tdres">
+                        <form method="POST" action="">
+                            <input  class="formtxt" type="text" name="recherche" value="Marseille, France" maxlength="40">
+                            <div class="cursor2">
+                                <input  type="submit" value=""><span class="fas fa-search white"></span>
+                            </div>
+                        </form>
                     </td>
-                    <td class="cursor"> <input type="submit" value="Rechercher"></td>
                 </tr>
             </table>
             <div class="filtre">
@@ -209,11 +223,13 @@
                             <div class="star2">
                                 <h3>Hôtel Le soleil du matin</h3>
                                 <p>Nuit à partir de 128€</p>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
+                                <div class="botstar">
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -226,11 +242,13 @@
                             <div class="star2">
                                 <h3>Au coeur de l'eau Chambres d'hôtes</h3>
                                 <p>Nuit à partir de 71€</p>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-empty"></span>
+                                <div class="botstar">
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-empty"></span>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -243,11 +261,13 @@
                             <div class="star2">
                                 <h3>Hôtel Tout bleu et Blanc</h3>
                                 <p>Nuit à partir de 68€</p>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-full"></span>
-                                <span class="fas fa-star star-empty"></span>
+                                <div class="botstar">
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-full"></span>
+                                    <span class="fas fa-star star-empty"></span>
+                                </div>
                             </div>
                         </div>
                     </a>
@@ -333,27 +353,29 @@
     <!-- FIN ACTIVITE -->
     <!-- DEBUT FOOTER -->
         <footer>
-            <div class="ftliste">
-                <p>A propos</p>
-                <ul>
-                    <li>Fonctionnement du site</li>
-                    <li>Conditions générales de vente</li>
-                    <li>Données et confidentialité</li>
-                </ul>
-            </div>
-            <div class="ftliste">
-                <p>Nos hébergements</p>
-                <ul>
-                    <li>Charte qualité</li>
-                    <li>Soumettre votre hôtel</li>
-                </ul>
-            </div>
-            <div class="ftliste">
-                <p>Assistance</p>
-                <ul>
-                    <li>Centre d'aide</li>
-                    <li>Nous contacter</li>
-                </ul>
+            <div class="footermid">
+                <div class="ftliste">
+                    <p>A propos</p>
+                    <ul>
+                        <li>Fonctionnement du site</li>
+                        <li>Conditions générales de vente</li>
+                        <li>Données et confidentialité</li>
+                    </ul>
+                </div>
+                <div class="ftliste">
+                    <p>Nos hébergements</p>
+                    <ul>
+                        <li>Charte qualité</li>
+                        <li>Soumettre votre hôtel</li>
+                    </ul>
+                </div>
+                <div class="ftliste">
+                    <p>Assistance</p>
+                    <ul>
+                        <li>Centre d'aide</li>
+                        <li>Nous contacter</li>
+                    </ul>
+                </div>
             </div>
         </footer>
 </body>
