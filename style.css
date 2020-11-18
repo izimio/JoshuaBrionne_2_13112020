@@ -54,7 +54,6 @@ h1 {
 
 .minw{
     display: none;
-    /* MENU IPHONE */
 }
 
 header p {
@@ -71,16 +70,11 @@ nav ul {
     display: flex;
 }
 
-.minnav li{
-    border: 1px solid fuchsia;
-    width: 100%;
-}
+nav li:nth-child(1),
+nav li:nth-child(2) {
 
-.minnav{
-    border: 2px solid red;
-   padding-left: 20%;
-   justify-content: left;
-   
+    margin-right: 70px;
+
 }
 
 nav li:hover{
@@ -165,7 +159,6 @@ align-items: center;
 .filtre li {
     margin-right: 20px;
     padding-right: 13px;
-    margin-bottom: 2%;
 }
 
 .filtre li:nth-child(1) {
@@ -205,6 +198,7 @@ align-items: center;
     display: flex;
     align-items: center;
     color: rgb(60, 60, 60);
+    margin-bottom: 1%;
 }
 
 /* FIN RESULTAT */
@@ -263,7 +257,7 @@ align-items: center;
     box-shadow: 3px 3px 3px rgba(91, 91, 91, 0.03);
     margin-bottom: 13%;
     width: 250px;
-    height: 250px;
+    height: 200px;
 }
 
 .car1_img{
@@ -278,7 +272,7 @@ align-items: center;
 
 .star {
     margin-left: 6%;
-    height: 40%
+    padding-bottom: 0;
 }
 
 .carte_car1:hover, .carte_car2:hover, .carte_car3_1:hover, .carte_car3_2:hover, .carte_car3_3:hover, .carte_car3_4:hover{
@@ -292,7 +286,6 @@ align-items: center;
 
 .star span{
     margin-top: 3%;
-    margin-bottom: 0%;
 }
 .star p{
     color: rgb(60, 60, 60);
