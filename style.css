@@ -12,7 +12,7 @@ body {
 }
 
 #bloc_page {
-    width: 1440px;
+   max-width: 1240px;
     margin: auto;
 }
 
@@ -85,6 +85,7 @@ nav li{
 
 nav li:hover{
     border-top: 2px solid #0065FC;
+    transition: 90ms;
 }
 
 
@@ -177,6 +178,7 @@ align-items: center;
 }
 
 .filtrebis:hover{
+    transition: 500ms;
     background-color: #DEEBFF;
 }
 
@@ -250,10 +252,9 @@ align-items: center;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    align-content: space-around;
+    align-content: space-evenly;
     margin-top: 2%;
     margin-bottom: 5%;
-    margin-right: 5%;
 }
 
 .carte_car1 {
@@ -261,14 +262,14 @@ align-items: center;
     border-radius: 25px;
     padding: 0.3em;
     box-shadow: 3px 3px 3px rgba(91, 91, 91, 0.03);
-    margin-bottom: 13%;
-    /* PAS SUR */
-    width: 250px;
-    height: 200px;
+    margin-top: 5%;
+    width: auto;
+    height: auto;
 }
 
 .car1_img{
-    height: 60%;
+    width: 230px;
+    height: 110px;
 }
 
 .car1_img img{
@@ -283,7 +284,8 @@ align-items: center;
 }
 
 .carte_car1:hover, .carte_car2:hover, .carte_car3_1:hover, .carte_car3_2:hover, .carte_car3_3:hover, .carte_car3_4:hover{
-    scale: 102%;
+    transform: scale(1.03);
+    transition: 400ms;
 }
 
 .star h3{
@@ -497,9 +499,8 @@ footer{
 }
 
 .footermid{
-    width: 100%;
     display: flex;
-    width: 1440px;
+    width: 1240px;
     margin: auto;
 }
 
@@ -704,10 +705,19 @@ footer li{
     }
     
     .carte_car1{
-        width: 100%;
         justify-content: left;
         box-shadow: 8px 8px 8px rgba(91, 91, 91, 0.1);
-        margin-bottom: 10%;
+        box-shadow: 5px 5px 0px rgba(91, 91, 91, 0.03);
+    }
+
+    .car1_img{
+        width: auto;
+        height:auto;
+    }
+
+    .car1_img img{
+        width: 355px;
+        height: 120px;
     }
 
     .sect{
